@@ -1,2 +1,10 @@
-<h1>Encrypt#machine</h1>
-<p>Find me in app/views/encrypt/machine.html.erb</p>
+<h1>Encode the Message</h1>
+
+<%= form_tag(root_url, method: "get") do %>
+	<%= label_tag(:p, "Enter the Message Below") %> <p>
+	<%= text_area_tag(:message, "", size: "24x6") %></p>
+  	<%= label_tag(:p, "Password") %>
+  	<%= text_field_tag(:p) %> <p>
+  	<%= submit_tag("Encode") %></p>
+  	<h2><%= @decoded || "The Encrypted Message Will Appear Here!" %></h2>
+<% end %>
