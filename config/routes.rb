@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  get 'encrypt/machine'
+  # get 'encrypt/machine'
+  root 'encrypt#machine'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
